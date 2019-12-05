@@ -1,6 +1,7 @@
 package jpabook.jpashop.repository;
 
 import jpabook.jpashop.domain.Order;
+import jpabook.jpashop.domain.OrderSearch;
 import lombok.RequiredArgsConstructor;
 import org.aspectj.weaver.ast.Or;
 import org.springframework.stereotype.Repository;
@@ -22,5 +23,14 @@ public class OrderRepository {
         return em.find(Order.class, id);
     }
 
-//    public List<Order> findAll(OrderSearch orderSearch) { }
+//    public List<Order> findAll(OrderSearch orderSearch) {
+//        String jpql = "select o from Order o join o.member m";
+//        boolean isFirst
+//
+//        return em.create  Query(jpql, Order.class)
+//                .setMaxResults(1000)
+//                .getResultList();
+//    }
+
+
 }
